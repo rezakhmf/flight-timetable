@@ -1,0 +1,6 @@
+framework module Pods_Qantas {
+  umbrella header "Pods-Qantas-umbrella.h"
+
+  export *
+  module * { export * }
+}
