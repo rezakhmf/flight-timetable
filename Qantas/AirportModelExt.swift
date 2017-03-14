@@ -40,10 +40,10 @@ extension Airport{
             throw SerializationAirportError.missing("timezone")
         }
         guard let country = json["country"] as? [String:String],
-            let countryCode = country["countryCode"],
-            let countryName = country["countryName"]
+            let countryCode = country["code"],
+            let countryName = country["display_name"]
             else {
-                throw SerializationAirportError.missing("country")
+                throw SerializationAirportError.missing("display_name")
         }
         
         // Initialize airport properties

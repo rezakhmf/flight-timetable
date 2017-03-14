@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E5F647CEBBCB85A416DBDDDD /* Pods_Qantas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F068A22CC2634F9E7B6AF82 /* Pods_Qantas.framework */; };
+		0989B431379A54FA0BCB8FEF /* Pods_QantasUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B8C465A994D66E7AA79628E /* Pods_QantasUITests.framework */; };
+		28CECD44C934B6096F2BF514 /* Pods_QantasTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA103BA97A78A23DEC0D1DB6 /* Pods_QantasTests.framework */; };
 		F51834EE1E76905E007DB203 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51834ED1E76905E007DB203 /* AppDelegate.swift */; };
 		F51834F01E76905E007DB203 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51834EF1E76905E007DB203 /* ViewController.swift */; };
 		F51834F31E76905E007DB203 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F51834F11E76905E007DB203 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 		F52A2FF11E76CC1100929BAA /* AirportError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52A2FF01E76CC1100929BAA /* AirportError.swift */; };
 		F52A2FF51E76D07200929BAA /* AirportModelExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52A2FF41E76D07200929BAA /* AirportModelExt.swift */; };
 		F52A2FF81E76D0AE00929BAA /* AiportBizExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52A2FF71E76D0AE00929BAA /* AiportBizExt.swift */; };
+		F5CABF3D1E78188300A8783D /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = F5CABF3C1E78188300A8783D /* Podfile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,9 +41,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		061FEF49A286E67197E43F2F /* Pods-QantasUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QantasUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QantasUITests/Pods-QantasUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		1F068A22CC2634F9E7B6AF82 /* Pods_Qantas.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Qantas.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D9AD1BDC02EB467DE2F3225 /* Pods-QantasTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QantasTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-QantasTests/Pods-QantasTests.release.xcconfig"; sourceTree = "<group>"; };
+		8B8C465A994D66E7AA79628E /* Pods_QantasUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QantasUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A10B9BB5B88653F1A9C2A822 /* Pods-Qantas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Qantas.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Qantas/Pods-Qantas.debug.xcconfig"; sourceTree = "<group>"; };
+		A7943424C5C1D2B30F4DF376 /* Pods-QantasTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QantasTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QantasTests/Pods-QantasTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C41731C972C14F8CE6950D12 /* Pods-QantasUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QantasUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-QantasUITests/Pods-QantasUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C93E85B21283D9530B40123F /* Pods-Qantas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Qantas.release.xcconfig"; path = "Pods/Target Support Files/Pods-Qantas/Pods-Qantas.release.xcconfig"; sourceTree = "<group>"; };
+		DA103BA97A78A23DEC0D1DB6 /* Pods_QantasTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QantasTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F51834EA1E76905E007DB203 /* Qantas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Qantas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F51834ED1E76905E007DB203 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F51834EF1E76905E007DB203 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -55,11 +63,11 @@
 		F51835091E76905F007DB203 /* QantasUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QantasUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F518350D1E76905F007DB203 /* QantasUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QantasUITests.swift; sourceTree = "<group>"; };
 		F518350F1E76905F007DB203 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F518351B1E7690B5007DB203 /* PodFile */ = {isa = PBXFileReference; lastKnownFileType = text; path = PodFile; sourceTree = "<group>"; };
 		F52A2FEC1E76C28E00929BAA /* Airport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Airport.swift; sourceTree = "<group>"; };
 		F52A2FF01E76CC1100929BAA /* AirportError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirportError.swift; sourceTree = "<group>"; };
 		F52A2FF41E76D07200929BAA /* AirportModelExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirportModelExt.swift; sourceTree = "<group>"; };
 		F52A2FF71E76D0AE00929BAA /* AiportBizExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AiportBizExt.swift; sourceTree = "<group>"; };
+		F5CABF3C1E78188300A8783D /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +75,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5F647CEBBCB85A416DBDDDD /* Pods_Qantas.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28CECD44C934B6096F2BF514 /* Pods_QantasTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0989B431379A54FA0BCB8FEF /* Pods_QantasUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +101,8 @@
 			isa = PBXGroup;
 			children = (
 				1F068A22CC2634F9E7B6AF82 /* Pods_Qantas.framework */,
+				DA103BA97A78A23DEC0D1DB6 /* Pods_QantasTests.framework */,
+				8B8C465A994D66E7AA79628E /* Pods_QantasUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -101,6 +112,10 @@
 			children = (
 				A10B9BB5B88653F1A9C2A822 /* Pods-Qantas.debug.xcconfig */,
 				C93E85B21283D9530B40123F /* Pods-Qantas.release.xcconfig */,
+				A7943424C5C1D2B30F4DF376 /* Pods-QantasTests.debug.xcconfig */,
+				2D9AD1BDC02EB467DE2F3225 /* Pods-QantasTests.release.xcconfig */,
+				061FEF49A286E67197E43F2F /* Pods-QantasUITests.debug.xcconfig */,
+				C41731C972C14F8CE6950D12 /* Pods-QantasUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -108,7 +123,7 @@
 		F51834E11E76905E007DB203 = {
 			isa = PBXGroup;
 			children = (
-				F518351B1E7690B5007DB203 /* PodFile */,
+				F5CABF3C1E78188300A8783D /* Podfile */,
 				F51834EC1E76905E007DB203 /* Qantas */,
 				F51835011E76905F007DB203 /* QantasTests */,
 				F518350C1E76905F007DB203 /* QantasUITests */,
@@ -238,9 +253,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F51835151E76905F007DB203 /* Build configuration list for PBXNativeTarget "QantasTests" */;
 			buildPhases = (
+				0FD7EA9B6174A6B46E762747 /* [CP] Check Pods Manifest.lock */,
 				F51834FA1E76905F007DB203 /* Sources */,
 				F51834FB1E76905F007DB203 /* Frameworks */,
 				F51834FC1E76905F007DB203 /* Resources */,
+				C6584CFFF9FB7E4CF13EDFA1 /* [CP] Embed Pods Frameworks */,
+				FD853B3B4C1CE174BB77974B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -256,9 +274,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F51835181E76905F007DB203 /* Build configuration list for PBXNativeTarget "QantasUITests" */;
 			buildPhases = (
+				FE624DACEA4B9E4E845EE4E5 /* [CP] Check Pods Manifest.lock */,
 				F51835051E76905F007DB203 /* Sources */,
 				F51835061E76905F007DB203 /* Frameworks */,
 				F51835071E76905F007DB203 /* Resources */,
+				1AC5A6008795B2E58169B4C7 /* [CP] Embed Pods Frameworks */,
+				48A2088A0C7219A4FBECD5E1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -323,6 +344,7 @@
 			files = (
 				F51834F81E76905E007DB203 /* LaunchScreen.storyboard in Resources */,
 				F51834F51E76905E007DB203 /* Assets.xcassets in Resources */,
+				F5CABF3D1E78188300A8783D /* Podfile in Resources */,
 				F51834F31E76905E007DB203 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,6 +366,51 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0FD7EA9B6174A6B46E762747 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1AC5A6008795B2E58169B4C7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QantasUITests/Pods-QantasUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		48A2088A0C7219A4FBECD5E1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QantasUITests/Pods-QantasUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		5E358D817905586D8C4BEE41 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -375,6 +442,51 @@
 			showEnvVarsInLog = 0;
 		};
 		C2727F3384F29215C54AC0EA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C6584CFFF9FB7E4CF13EDFA1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QantasTests/Pods-QantasTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD853B3B4C1CE174BB77974B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QantasTests/Pods-QantasTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE624DACEA4B9E4E845EE4E5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -575,6 +687,7 @@
 		};
 		F51835161E76905F007DB203 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7943424C5C1D2B30F4DF376 /* Pods-QantasTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -589,6 +702,7 @@
 		};
 		F51835171E76905F007DB203 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D9AD1BDC02EB467DE2F3225 /* Pods-QantasTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -603,6 +717,7 @@
 		};
 		F51835191E76905F007DB203 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 061FEF49A286E67197E43F2F /* Pods-QantasUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = QantasUITests/Info.plist;
@@ -616,6 +731,7 @@
 		};
 		F518351A1E76905F007DB203 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C41731C972C14F8CE6950D12 /* Pods-QantasUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = QantasUITests/Info.plist;

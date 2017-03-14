@@ -12,6 +12,11 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        Airport.airports(matching: "https://www.qantas.com.au/api/airports"){ airports in
+            print(airports)
+        }
         // Do any additional setup after loading the view, typically from a nib.
     }
 

@@ -7,28 +7,64 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1937EFE4658392329DE1049CF78C036C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		21277DC516F27A6B5A14B2BC3F68EF33 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		C30D7F5FDAA111F0F7A79965F8E3C739 /* Pods-Qantas-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E17C024ECE222C9F9A3FB092D23249 /* Pods-Qantas-dummy.m */; };
-		E47AF038F9A649392FFB8B37B3687669 /* Pods-Qantas-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B005C8C571034A49DF643B4CEEFA79F /* Pods-Qantas-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4DEB78A359E7E6FE8621EA5B27169937 /* Pods-QantasUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CA40268994E3AF3AD0177BF155394B29 /* Pods-QantasUITests-dummy.m */; };
+		93ADE746C74D5CFD9283A67548244ABF /* Pods-QantasTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EF040BF6260A8288703079D2E2FBF53C /* Pods-QantasTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6F11FBB89E6BCF10EB13DC825FEAC9E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		C30D7F5FDAA111F0F7A79965F8E3C739 /* Pods-Qantas-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 66EFBD0D28711622901B997403C0959A /* Pods-Qantas-dummy.m */; };
+		D5B6D2C7902DED24B85DC0BDC0D76466 /* Pods-QantasUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FCA639FEADA380A9DE2D80F12ABDC0C2 /* Pods-QantasUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E47AF038F9A649392FFB8B37B3687669 /* Pods-Qantas-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 34F77898F5F556D46293F2B5213C784D /* Pods-Qantas-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EDC6217A8BAF42020C0C72B93ED8A41B /* Pods-QantasTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E93F880E2E9C4CDBD11F855AD4D62281 /* Pods-QantasTests-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		36EE21F12A6EF09C19BF5DF47976D885 /* Pods-Qantas-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Qantas-frameworks.sh"; sourceTree = "<group>"; };
-		378ADEE50C60FE16DE23A01A73C60D8B /* Pods-Qantas.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Qantas.modulemap"; sourceTree = "<group>"; };
-		503823C1A7CCCB509120D4257D365795 /* Pods-Qantas-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Qantas-acknowledgements.plist"; sourceTree = "<group>"; };
-		5708E68A425F3EB69D35E82326963800 /* Pods_Qantas.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Qantas.framework; path = "Pods-Qantas.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5E1A87F347BFD893C7CDEA7DC75C4CCB /* Pods-Qantas-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Qantas-acknowledgements.markdown"; sourceTree = "<group>"; };
+		06B4EFA5AB191EA9153F46E6985EA42A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06CCF7B689574E4FA81CD4B461CCC098 /* Pods-Qantas.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Qantas.modulemap"; sourceTree = "<group>"; };
+		0993DA4D1A78FEEAC4250EE581EB2B3B /* Pods-QantasUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QantasUITests-frameworks.sh"; sourceTree = "<group>"; };
+		09BEF9A46386931AD733ED324939F0C9 /* Pods-QantasTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QantasTests-frameworks.sh"; sourceTree = "<group>"; };
+		0A6333CCCE021C9E4A5B1BE33E92A4A5 /* Pods-Qantas-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Qantas-frameworks.sh"; sourceTree = "<group>"; };
+		1CFFAA45D28518C113F7243652C75924 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DDC9C83634F15127696729F05454C7E /* Pods-Qantas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Qantas.release.xcconfig"; sourceTree = "<group>"; };
+		2842730C5519628DB74F37E4A1621674 /* Pods_QantasTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_QantasTests.framework; path = "Pods-QantasTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		299F5F605EBC525983C0E27BBB4113DE /* Pods-Qantas-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Qantas-acknowledgements.plist"; sourceTree = "<group>"; };
+		2ED691E55A243716649729805A8FE4F5 /* Pods-QantasTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QantasTests.release.xcconfig"; sourceTree = "<group>"; };
+		34F77898F5F556D46293F2B5213C784D /* Pods-Qantas-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Qantas-umbrella.h"; sourceTree = "<group>"; };
+		43A3754E40128FCF5C08AC349810A6D2 /* Pods-QantasTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QantasTests-resources.sh"; sourceTree = "<group>"; };
+		43BF6EE7426C71E29B55391EAFCD567D /* Pods-QantasUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-QantasUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		50EA528C7F19DADE9D123D7904370098 /* Pods-QantasUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QantasUITests.release.xcconfig"; sourceTree = "<group>"; };
+		66EFBD0D28711622901B997403C0959A /* Pods-Qantas-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Qantas-dummy.m"; sourceTree = "<group>"; };
+		7D6CA0C4C1CC742E6372FD90F1341E4B /* Pods-QantasUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-QantasUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		87BCCD2222ACAA992E853FFE88E74147 /* Pods-Qantas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Qantas.debug.xcconfig"; sourceTree = "<group>"; };
+		88107B4DE02B205E79BDF3DAB063CBA3 /* Pods-QantasTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-QantasTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		8886E14AFAD3360991A31E13CBC2974A /* Pods_QantasUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_QantasUITests.framework; path = "Pods-QantasUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		88D7C019B005452D3CF30B82A56035C1 /* Pods_Qantas.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Qantas.framework; path = "Pods-Qantas.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9258FDA1A0CE2F8168C15139DA34F3DD /* Pods-QantasTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-QantasTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9B005C8C571034A49DF643B4CEEFA79F /* Pods-Qantas-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Qantas-umbrella.h"; sourceTree = "<group>"; };
-		A4C88EB5E4F95CA175FEFF17897D439C /* Pods-Qantas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Qantas.release.xcconfig"; sourceTree = "<group>"; };
-		B45EFF1D05B13EB45C44A945974C6A62 /* Pods-Qantas-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Qantas-resources.sh"; sourceTree = "<group>"; };
-		B77EC17134DBA83AA3808A51CC71FADF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A5372921966F158A76F08A3B2AADDA7 /* Pods-QantasUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QantasUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9AA4F9971B84B3C8948654BFC019630B /* Pods-QantasTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-QantasTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A5E539AFB12B1D1771031153C1F3C33B /* Pods-QantasTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-QantasTests.modulemap"; sourceTree = "<group>"; };
+		B0F12278BD73021AAD19177188221160 /* Pods-Qantas-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Qantas-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C2DEF609454177D55726824D1AEB669C /* Pods-Qantas-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Qantas-resources.sh"; sourceTree = "<group>"; };
+		CA40268994E3AF3AD0177BF155394B29 /* Pods-QantasUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-QantasUITests-dummy.m"; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		E393A1654A90983DC13CDE21912B1462 /* Pods-Qantas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Qantas.debug.xcconfig"; sourceTree = "<group>"; };
-		E9E17C024ECE222C9F9A3FB092D23249 /* Pods-Qantas-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Qantas-dummy.m"; sourceTree = "<group>"; };
+		CC7DF0BC5EEE38BF7A894AF31A1987B8 /* Pods-QantasUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-QantasUITests-resources.sh"; sourceTree = "<group>"; };
+		E93F880E2E9C4CDBD11F855AD4D62281 /* Pods-QantasTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-QantasTests-dummy.m"; sourceTree = "<group>"; };
+		EF040BF6260A8288703079D2E2FBF53C /* Pods-QantasTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-QantasTests-umbrella.h"; sourceTree = "<group>"; };
+		EF2C5A90C40D1A33ACD9759EF10E182C /* Pods-QantasUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-QantasUITests.modulemap"; sourceTree = "<group>"; };
+		FCA639FEADA380A9DE2D80F12ABDC0C2 /* Pods-QantasUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-QantasUITests-umbrella.h"; sourceTree = "<group>"; };
+		FFB285E30C1EC09508D8A57FDD672452 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3FD7F0821998BE55332F690C5DF00FE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6F11FBB89E6BCF10EB13DC825FEAC9E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F274B0A3D89977E796A8412E198AB0E3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -37,23 +73,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F9B2DA10F30E7E51D2D859DEE66217A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1937EFE4658392329DE1049CF78C036C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0108A29368287AD55F575DBF982637C1 /* Products */ = {
+		1AAA9185D995BD7BB7ED28F6A6F7EEE5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5708E68A425F3EB69D35E82326963800 /* Pods_Qantas.framework */,
+				88D7C019B005452D3CF30B82A56035C1 /* Pods_Qantas.framework */,
+				2842730C5519628DB74F37E4A1621674 /* Pods_QantasTests.framework */,
+				8886E14AFAD3360991A31E13CBC2974A /* Pods_QantasUITests.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		5820AF4587BF53A7A1D63010BF17F52B /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				E9396A7758DD00F4E3C217F38E888984 /* Pods-Qantas */,
-			);
-			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
@@ -64,14 +102,42 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		7A3C4C06BDEEFF063CD6BC7B422A3378 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B84609915535EF8E1DADBD83860362F5 /* Pods-Qantas */,
+				ED30AC34393C4E238D9F640BAEF847AA /* Pods-QantasTests */,
+				D720356D0F1E8590A76C5D85BAFA7347 /* Pods-QantasUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				0108A29368287AD55F575DBF982637C1 /* Products */,
-				5820AF4587BF53A7A1D63010BF17F52B /* Targets Support Files */,
+				1AAA9185D995BD7BB7ED28F6A6F7EEE5 /* Products */,
+				7A3C4C06BDEEFF063CD6BC7B422A3378 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		B84609915535EF8E1DADBD83860362F5 /* Pods-Qantas */ = {
+			isa = PBXGroup;
+			children = (
+				FFB285E30C1EC09508D8A57FDD672452 /* Info.plist */,
+				06CCF7B689574E4FA81CD4B461CCC098 /* Pods-Qantas.modulemap */,
+				B0F12278BD73021AAD19177188221160 /* Pods-Qantas-acknowledgements.markdown */,
+				299F5F605EBC525983C0E27BBB4113DE /* Pods-Qantas-acknowledgements.plist */,
+				66EFBD0D28711622901B997403C0959A /* Pods-Qantas-dummy.m */,
+				0A6333CCCE021C9E4A5B1BE33E92A4A5 /* Pods-Qantas-frameworks.sh */,
+				C2DEF609454177D55726824D1AEB669C /* Pods-Qantas-resources.sh */,
+				34F77898F5F556D46293F2B5213C784D /* Pods-Qantas-umbrella.h */,
+				87BCCD2222ACAA992E853FFE88E74147 /* Pods-Qantas.debug.xcconfig */,
+				1DDC9C83634F15127696729F05454C7E /* Pods-Qantas.release.xcconfig */,
+			);
+			name = "Pods-Qantas";
+			path = "Target Support Files/Pods-Qantas";
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -82,27 +148,61 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E9396A7758DD00F4E3C217F38E888984 /* Pods-Qantas */ = {
+		D720356D0F1E8590A76C5D85BAFA7347 /* Pods-QantasUITests */ = {
 			isa = PBXGroup;
 			children = (
-				B77EC17134DBA83AA3808A51CC71FADF /* Info.plist */,
-				378ADEE50C60FE16DE23A01A73C60D8B /* Pods-Qantas.modulemap */,
-				5E1A87F347BFD893C7CDEA7DC75C4CCB /* Pods-Qantas-acknowledgements.markdown */,
-				503823C1A7CCCB509120D4257D365795 /* Pods-Qantas-acknowledgements.plist */,
-				E9E17C024ECE222C9F9A3FB092D23249 /* Pods-Qantas-dummy.m */,
-				36EE21F12A6EF09C19BF5DF47976D885 /* Pods-Qantas-frameworks.sh */,
-				B45EFF1D05B13EB45C44A945974C6A62 /* Pods-Qantas-resources.sh */,
-				9B005C8C571034A49DF643B4CEEFA79F /* Pods-Qantas-umbrella.h */,
-				E393A1654A90983DC13CDE21912B1462 /* Pods-Qantas.debug.xcconfig */,
-				A4C88EB5E4F95CA175FEFF17897D439C /* Pods-Qantas.release.xcconfig */,
+				06B4EFA5AB191EA9153F46E6985EA42A /* Info.plist */,
+				EF2C5A90C40D1A33ACD9759EF10E182C /* Pods-QantasUITests.modulemap */,
+				43BF6EE7426C71E29B55391EAFCD567D /* Pods-QantasUITests-acknowledgements.markdown */,
+				7D6CA0C4C1CC742E6372FD90F1341E4B /* Pods-QantasUITests-acknowledgements.plist */,
+				CA40268994E3AF3AD0177BF155394B29 /* Pods-QantasUITests-dummy.m */,
+				0993DA4D1A78FEEAC4250EE581EB2B3B /* Pods-QantasUITests-frameworks.sh */,
+				CC7DF0BC5EEE38BF7A894AF31A1987B8 /* Pods-QantasUITests-resources.sh */,
+				FCA639FEADA380A9DE2D80F12ABDC0C2 /* Pods-QantasUITests-umbrella.h */,
+				9A5372921966F158A76F08A3B2AADDA7 /* Pods-QantasUITests.debug.xcconfig */,
+				50EA528C7F19DADE9D123D7904370098 /* Pods-QantasUITests.release.xcconfig */,
 			);
-			name = "Pods-Qantas";
-			path = "Target Support Files/Pods-Qantas";
+			name = "Pods-QantasUITests";
+			path = "Target Support Files/Pods-QantasUITests";
+			sourceTree = "<group>";
+		};
+		ED30AC34393C4E238D9F640BAEF847AA /* Pods-QantasTests */ = {
+			isa = PBXGroup;
+			children = (
+				1CFFAA45D28518C113F7243652C75924 /* Info.plist */,
+				A5E539AFB12B1D1771031153C1F3C33B /* Pods-QantasTests.modulemap */,
+				9258FDA1A0CE2F8168C15139DA34F3DD /* Pods-QantasTests-acknowledgements.markdown */,
+				88107B4DE02B205E79BDF3DAB063CBA3 /* Pods-QantasTests-acknowledgements.plist */,
+				E93F880E2E9C4CDBD11F855AD4D62281 /* Pods-QantasTests-dummy.m */,
+				09BEF9A46386931AD733ED324939F0C9 /* Pods-QantasTests-frameworks.sh */,
+				43A3754E40128FCF5C08AC349810A6D2 /* Pods-QantasTests-resources.sh */,
+				EF040BF6260A8288703079D2E2FBF53C /* Pods-QantasTests-umbrella.h */,
+				9AA4F9971B84B3C8948654BFC019630B /* Pods-QantasTests.debug.xcconfig */,
+				2ED691E55A243716649729805A8FE4F5 /* Pods-QantasTests.release.xcconfig */,
+			);
+			name = "Pods-QantasTests";
+			path = "Target Support Files/Pods-QantasTests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		22AECED00963FA4AAAE5BF6E724B91BB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93ADE746C74D5CFD9283A67548244ABF /* Pods-QantasTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F27EC4B737B1490E076EDBFC2AF63AF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5B6D2C7902DED24B85DC0BDC0D76466 /* Pods-QantasUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E970456A50B5042C297B9EC6840EF725 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -114,6 +214,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		2862F70690E677AE561D2117F332187B /* Pods-QantasTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D72BB6593A37AF4E06060EDB18BDC9F7 /* Build configuration list for PBXNativeTarget "Pods-QantasTests" */;
+			buildPhases = (
+				4424E05B545C827199CBD1BAC4FADDC4 /* Sources */,
+				3FD7F0821998BE55332F690C5DF00FE0 /* Frameworks */,
+				22AECED00963FA4AAAE5BF6E724B91BB /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-QantasTests";
+			productName = "Pods-QantasTests";
+			productReference = 2842730C5519628DB74F37E4A1621674 /* Pods_QantasTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		B9ED45BC530BA07E4E9A5B6C71B44983 /* Pods-Qantas */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 655530A7FAEFE3DAA9498A8E69858154 /* Build configuration list for PBXNativeTarget "Pods-Qantas" */;
@@ -128,7 +245,24 @@
 			);
 			name = "Pods-Qantas";
 			productName = "Pods-Qantas";
-			productReference = 5708E68A425F3EB69D35E82326963800 /* Pods_Qantas.framework */;
+			productReference = 88D7C019B005452D3CF30B82A56035C1 /* Pods_Qantas.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BC1EF7917ECA67E0E8C34DACDD255230 /* Pods-QantasUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 553EF6489D53182FCF4C7491CF427C2F /* Build configuration list for PBXNativeTarget "Pods-QantasUITests" */;
+			buildPhases = (
+				267238D6F24694A6E61BBB8AE0ADA526 /* Sources */,
+				F9B2DA10F30E7E51D2D859DEE66217A2 /* Frameworks */,
+				3F27EC4B737B1490E076EDBFC2AF63AF /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-QantasUITests";
+			productName = "Pods-QantasUITests";
+			productReference = 8886E14AFAD3360991A31E13CBC2974A /* Pods_QantasUITests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -148,16 +282,34 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 0108A29368287AD55F575DBF982637C1 /* Products */;
+			productRefGroup = 1AAA9185D995BD7BB7ED28F6A6F7EEE5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				B9ED45BC530BA07E4E9A5B6C71B44983 /* Pods-Qantas */,
+				2862F70690E677AE561D2117F332187B /* Pods-QantasTests */,
+				BC1EF7917ECA67E0E8C34DACDD255230 /* Pods-QantasUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		267238D6F24694A6E61BBB8AE0ADA526 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DEB78A359E7E6FE8621EA5B27169937 /* Pods-QantasUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4424E05B545C827199CBD1BAC4FADDC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDC6217A8BAF42020C0C72B93ED8A41B /* Pods-QantasTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7617DAC3F7404BF63382560EC8AC5655 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -169,7 +321,257 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		59B042A655B7C20CBAB90E385BF4E4C7 /* Debug */ = {
+		2B0FC88FD5EFF851DBFB4C301246F26E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A5372921966F158A76F08A3B2AADDA7 /* Pods-QantasUITests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-QantasUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-QantasUITests/Pods-QantasUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_QantasUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2B27D6666F901AD5877A38A7F58E0DB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DDC9C83634F15127696729F05454C7E /* Pods-Qantas.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Qantas/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Qantas/Pods-Qantas.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Qantas;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		360E0376541BD9628764662652B45DD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AA4F9971B84B3C8948654BFC019630B /* Pods-QantasTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-QantasTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-QantasTests/Pods-QantasTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_QantasTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		673254EEAF0B5BF4596080C749645884 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7B431A6D17D2D2531492887D92ED48E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87BCCD2222ACAA992E853FFE88E74147 /* Pods-Qantas.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Qantas/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Qantas/Pods-Qantas.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Qantas;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		931825199AD6C5B81A4FD6CC9C192F4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50EA528C7F19DADE9D123D7904370098 /* Pods-QantasUITests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-QantasUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-QantasUITests/Pods-QantasUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_QantasUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C5C39FABDD6AEF82721D2C5797683ACE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2ED691E55A243716649729805A8FE4F5 /* Pods-QantasTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-QantasTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-QantasTests/Pods-QantasTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_QantasTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E4F26E6EB105713A6A7E7E2E283AC2DF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -205,121 +607,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Debug;
-		};
-		9271F53E366F8A5EB7084FDA4D26EBAA /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A4C88EB5E4F95CA175FEFF17897D439C /* Pods-Qantas.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Qantas/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Qantas/Pods-Qantas.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Qantas;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		B7324857C38B065FEB1EEE3105C2367A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		C9AEB5989C835212F7938595FFFC8927 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E393A1654A90983DC13CDE21912B1462 /* Pods-Qantas.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Qantas/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Qantas/Pods-Qantas.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Qantas;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
@@ -329,8 +621,17 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				59B042A655B7C20CBAB90E385BF4E4C7 /* Debug */,
-				B7324857C38B065FEB1EEE3105C2367A /* Release */,
+				E4F26E6EB105713A6A7E7E2E283AC2DF /* Debug */,
+				673254EEAF0B5BF4596080C749645884 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		553EF6489D53182FCF4C7491CF427C2F /* Build configuration list for PBXNativeTarget "Pods-QantasUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B0FC88FD5EFF851DBFB4C301246F26E /* Debug */,
+				931825199AD6C5B81A4FD6CC9C192F4C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -338,8 +639,17 @@
 		655530A7FAEFE3DAA9498A8E69858154 /* Build configuration list for PBXNativeTarget "Pods-Qantas" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C9AEB5989C835212F7938595FFFC8927 /* Debug */,
-				9271F53E366F8A5EB7084FDA4D26EBAA /* Release */,
+				7B431A6D17D2D2531492887D92ED48E2 /* Debug */,
+				2B27D6666F901AD5877A38A7F58E0DB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D72BB6593A37AF4E06060EDB18BDC9F7 /* Build configuration list for PBXNativeTarget "Pods-QantasTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				360E0376541BD9628764662652B45DD3 /* Debug */,
+				C5C39FABDD6AEF82721D2C5797683ACE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
