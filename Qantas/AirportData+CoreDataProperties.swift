@@ -26,6 +26,5 @@ extension AirportData {
     @NSManaged public var country_display_name: String?
     @NSManaged public var timezone: String?
     @NSManaged public var country_code: String?
-    @NSManaged public var attribute: NSObject?
 
 }
