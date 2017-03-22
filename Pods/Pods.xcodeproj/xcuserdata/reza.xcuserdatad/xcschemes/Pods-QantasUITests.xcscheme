@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'B9ED45BC530BA07E4E9A5B6C71B44983'
-               BlueprintName = 'Pods-Qantas'
+               BlueprintIdentifier = 'BC1EF7917ECA67E0E8C34DACDD255230'
+               BlueprintName = 'Pods-QantasUITests'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'Pods-Qantas.framework'>
+               BuildableName = 'Pods-QantasUITests.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
