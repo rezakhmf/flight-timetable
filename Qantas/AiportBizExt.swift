@@ -40,8 +40,11 @@ extension Airport {
                 let airportsJson = json["airports"] as? [[String: Any]] ?? []
                 for case let item in airportsJson {
                     if let airport = try? Airport(json: item) {
-                        print(airport ?? "nothing")
+                        //print(airport ?? "nothing")
                         airports.append(airport!)
+                        if(airports.count == 2 ){
+                             completionHandler(airports)
+                        }
                     }
                 }
             } catch let error as NSError {
