@@ -10,6 +10,7 @@ import Foundation
 
 extension Airport{
     
+    
     init?(json:[String:Any]) throws {
         guard let code = json["code"] as? String else {
             throw SerializationAirportError.missing("code")

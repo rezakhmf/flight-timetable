@@ -42,7 +42,7 @@ extension Airport {
                     if let airport = try? Airport(json: item) {
                         //print(airport ?? "nothing")
                         airports.append(airport!)
-                        if(airports.count == 2 ){
+                        if(airports.count == 10 ){
                              completionHandler(airports)
                         }
                     }

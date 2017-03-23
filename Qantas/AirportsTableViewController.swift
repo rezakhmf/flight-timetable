@@ -31,10 +31,7 @@ class AirportsTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("secon vc")
-        
-        print(testArray)
-        print(mAirport)
+    
         
         // self.mvc.delegate = self
         //self.tableView.delegate = self
@@ -62,9 +59,8 @@ class AirportsTableViewController: UITableViewController {
         
         let cell:AirportsTableViewCell = (tableView.dequeueReusableCell(withIdentifier: "airportCell", for: indexPath) as? AirportsTableViewCell)!
         
-        cell.airportNameCode.text = self.mAirport[indexPath.row].displayName  //"test"
-        cell.airportTimeZone.text = self.mAirport[indexPath.row].code  //"test1"
-        // print("cellliii")
+        cell.airportNameCode.text = self.mAirport[indexPath.row].displayName
+        cell.airportTimeZone.text = self.mAirport[indexPath.row].code
         return cell
     }
  
@@ -78,7 +74,15 @@ class AirportsTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(mAirport[indexPath.row].displayName);
+        
+        let airportDetails:AirportDetails = AirportDetails()
+        
+        let airportCode:String = mAirport[indexPath.row].code
+      
+        airportDetails.mAirports = AirportDAL.findByCode(mCode: airportCode)
+        
+        
+        self.present(airportDetails, animated: true, completion: nil)
     }
     /*
     // Override to support conditional editing of the table view.

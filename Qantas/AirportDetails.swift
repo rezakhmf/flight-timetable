@@ -10,11 +10,22 @@ import UIKit
 
 class AirportDetails: ViewController {
     
-    var mAirports:[Airport] = []
-
+    
+    @IBOutlet weak var airportName: UILabel!
+    @IBOutlet weak var country: UILabel!
+    @IBOutlet weak var internationalFlag: UISwitch!
+    @IBOutlet weak var regionalFlag: UISwitch!
+    @IBOutlet weak var currency: UILabel!
+    var mAirports:[AirportData] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        airportName.text = mAirports[0].code
+        country.text = mAirports[0].timezone
+        internationalFlag.setOn(mAirports[0].international_airport, animated: false)
+        regionalFlag.setOn(mAirports[0].regional_airport, animated: false)
+        currency.text = mAirports[0].currency_code
         // Do any additional setup after loading the view.
     }
 

@@ -25,33 +25,43 @@ extension AirportDAL {
     return []
     }
     
-    class func findByCode(mCode:String) -> AirportData {
+    class func findByCode(mCode:String) -> [AirportData] {
     
+        
+        let airportPredicate = NSPredicate(format: "code == %@", mCode)
+        
+        
         let fetchAirports:NSFetchRequest<AirportData> = AirportData.fetchRequest()
+        
+        fetchAirports.predicate = airportPredicate
         
         do {
             let airportsFromDB = try AirportDAL.getContext().fetch(fetchAirports)
-            print("number of result: \(airportsFromDB.count)")
-            
+        
+            var mAirportArray:[AirportData] = []
             for result in airportsFromDB as [AirportData] {
-                if(result.code == mCode){
-                    return result
-                }
+                let resultCode = result.code
+                mAirportArray.append(result)
+                print(resultCode)
+//                if(resultCode == mCode){
+//                   // return result
+//                }
             }
+            return mAirportArray//airportsFromDB as [AirportData]
         }//TODO: create a exceptin
         catch {
             print("Error")
         }
         
-        return AirportData()
+        return []
 
     }
     
     class func insert(mAirport:Airport) -> Airport{
     
-        let airportData:AirportData = NSEntityDescription.insertNewObject(forEntityName: "AirportData", into: AirportDAL.persistentContainer.viewContext) as! AirportData
+        let airportData:AirportData = NSEntityDescription.insertNewObject(forEntityName: "AirportData", into: AirportDAL.getContext()) as! AirportData
         
-        airportData.display_name = mAirport.code
+        airportData.code = mAirport.code
         airportData.regional_airport = mAirport.regionalAirport
         airportData.international_airport = mAirport.internationalAirport
         airportData.country_code = mAirport.country.countryCode
@@ -61,13 +71,15 @@ extension AirportDAL {
         airportData.longitude = mAirport.location.longitude
         airportData.display_name = mAirport.timeZone
         
+        
+        
         AirportDAL.saveContext();
         
         return mAirport
     }
     
     class func insertAll(mAirports:[Airport]) -> Int{
-    
+        
         var insertedAirports:[Airport] = []
         
         for index in 0...mAirports.count-1 {
@@ -77,23 +89,23 @@ extension AirportDAL {
         return mAirports.count
     }
     
-    class func deleteAll(){
+    class func deleteAll() -> Bool{
         
         let fetchAirports:NSFetchRequest<AirportData> = AirportData.fetchRequest()
         
         do {
             let airportsFromDB = try AirportDAL.getContext().fetch(fetchAirports)
-            print("number of result: \(airportsFromDB.count)")
-            
             for result in airportsFromDB as [AirportData] {
-                print("\(result.display_name!)")
-                result.managedObjectContext?.delete(result)
+                AirportDAL.getContext().delete(result)
                 AirportDAL.saveContext()
             }
+            return true
         }//TODO: create a exceptin
         catch {
            print("Error")
         }
+        
+        return false
     }
     
     
