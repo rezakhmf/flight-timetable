@@ -44,12 +44,6 @@ class AirportsTableViewController: UITableViewController {
 
     
     
-    func getAirports(airports: [Airport]) {
-        
-        // self.mAirport = airports
-        // self.tableView.reloadData()
-        print("yay delegate")
-    }
 
     // MARK: - Table view data source
 
@@ -60,7 +54,7 @@ class AirportsTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 10//self.mAirport.count
+        return self.mAirport.count
     }
 
     
@@ -68,13 +62,24 @@ class AirportsTableViewController: UITableViewController {
         
         let cell:AirportsTableViewCell = (tableView.dequeueReusableCell(withIdentifier: "airportCell", for: indexPath) as? AirportsTableViewCell)!
         
-        cell.airportNameCode.text = "test"//self.mAirport[indexPath.row].code  //"test"
-        cell.airportTimeZone.text = "test"//self.mAirport[indexPath.row].code  //"test1"
+        cell.airportNameCode.text = self.mAirport[indexPath.row].displayName  //"test"
+        cell.airportTimeZone.text = self.mAirport[indexPath.row].code  //"test1"
         // print("cellliii")
         return cell
     }
  
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat
+    {
+        return 35
+    }
 
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 59
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print(mAirport[indexPath.row].displayName);
+    }
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
