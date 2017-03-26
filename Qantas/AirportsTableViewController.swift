@@ -59,6 +59,8 @@ class AirportsTableViewController: UITableViewController {
         
         let cell:AirportsTableViewCell = (tableView.dequeueReusableCell(withIdentifier: "airportCell", for: indexPath) as? AirportsTableViewCell)!
         
+        
+        
         cell.airportNameCode.text = self.mAirport[indexPath.row].displayName
         cell.airportTimeZone.text = self.mAirport[indexPath.row].code
         return cell
@@ -75,15 +77,56 @@ class AirportsTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+        
         let airportDetails:AirportDetails = AirportDetails()
         
         let airportCode:String = mAirport[indexPath.row].code
       
-        airportDetails.mAirports = AirportDAL.findByCode(mCode: airportCode)
+        let foundAirports = AirportDAL.findByCode(mCode: airportCode)
+        
+        //print(foundAirports)
+        
+        let airportName:String = foundAirports[0].code!
+        let timezone = foundAirports[0].timezone!
+        let internationalFlag = foundAirports[0].international_airport
+        let regionalFlag = foundAirports[0].regional_airport
         
         
-        self.present(airportDetails, animated: true, completion: nil)
+        let mmmmm:String = airportName
+        
+         airportDetails.mAirports = foundAirports
+        //airportDetails. = AirportDAL.findByCode(mCode: airportCode)
+        let mainStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        let vc = mainStoryboard.instantiateViewController(withIdentifier: "airportDetails") as! AirportDetails
+          vc.mAirports = foundAirports
+         self.present(vc, animated: true, completion: nil)
+        
+        
+        //let view = airportDetails.view
+        //self.present(airportDetails, animated: true, completion: nil)
     }
+    
+     /*
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+       
+        // msig
+        if let identifer = segue.identifier {
+            switch identifer {
+            case "msig":
+                let airportDetails = segue.destination as! AirportDetails
+                if let meindex = self.tableView.indexPath(for: sender as! UITableViewCell){
+            
+            }
+    
+            default: break
+        
+        }
+        }
+    }
+ */
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

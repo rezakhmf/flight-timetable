@@ -16,7 +16,18 @@ class AirportDAL {
     }
     
     class func getContext() -> NSManagedObjectContext {
-        return AirportDAL.persistentContainer.viewContext
+        // AirportDAL.persistentContainer.viewContext.mergePolicy = NSMergeByPropertyObjectTrumpMergePolicy
+        
+        //  var context:NSManagedObjectContext = AirportDAL.persistentContainer.viewContext()
+        
+        // var parentContext:NSManagedObjectContext =  AirportDAL.persistentContainer.viewContext.parent!
+        
+        //  parentContext.performAndWait {
+            //      parentContext.mergePolicy = NSMergeByPropertyObjectTrumpMergePolicy
+        // }
+        
+        
+        return self.persistentContainer.viewContext
     }
     
     
@@ -30,7 +41,7 @@ class AirportDAL {
          error conditions that could cause the creation of the store to fail.
          */
         let container = NSPersistentContainer(name: "QantasDB")
-        
+    
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
                 // Replace this implementation with code to handle the error appropriately.
@@ -44,7 +55,8 @@ class AirportDAL {
                  * The store could not be migrated to the current model version.
                  Check the error message to determine what the actual problem was.
                  */
-                fatalError("Unresolved error \(error), \(error.userInfo)")
+                // fatalError("Unresolved error \(error), \(error.userInfo)")
+                print("Unresolved error \(error), \(error.userInfo)")
             }
         })
         return container
@@ -53,15 +65,18 @@ class AirportDAL {
     // MARK: - Core Data Saving support
     
     class func saveContext () {
-        let context = persistentContainer.viewContext //persistentContainer.newBackgroundContext()
+        let context = self.getContext()
+        //persistentContainer.viewContext //persistentContainer.newBackgroundContext()
         if context.hasChanges {
             do {
                 try context.save()
             } catch {
                 // Replace this implementation with code to handle the error appropriately.
                 // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                let nserror = error as NSError
-                fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
+                 let nserror = error as NSError
+                // print("Unresolved error \(error), \(error.userInfo)")
+                // fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
+                print(nserror)
             }
         }
     }
