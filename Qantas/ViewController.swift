@@ -11,64 +11,41 @@ import CoreData
 
 
 
-class ViewController: UIViewController, AirportsTableViewControllerDelegate {
-    
-    var delegate:AirportsTableViewControllerDelegate?
+class ViewController: UIViewController {
     
     
     
-    // MARK: -
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // AirportDAL.deleteAll()
-        
+        // MARK: - background queue
         let readAirportQueue = DispatchQueue(label: "au.com.qantas.airports.read", qos: .background)
-        
         
         let readAirpotsWorkItem = DispatchWorkItem {
             Airport.airports(matching: "https://www.qantas.com.au/api/airports"){ airports in
-                
+                // MARK: - algorithm
+                //pish first 10 airports from api call
+                //use structure to pass by value instead of referecnce to
+                //avoid ARC interception
                 if (airports.count < 11)  {
-                    print(airports.count)
+                    // MARK: - main queue to serve transition
                     DispatchQueue.main.sync {
                         let secondViewController:AirportsTableViewController = AirportsTableViewController()
-                        
                         secondViewController.mAirport = airports
-                        
                         self.present(secondViewController, animated: true, completion: nil)
-                        // _ = AirportDAL.insertAll(mAirports: airports)
                     }
                 } else {
-                    print(airports.count)
-                    //should put back in created thread
-                    //do upsert
-                    //  while(AirportDAL.deleteAll()){
-                    //upsert
-                    // print(airports)
-                        //     break
-                        // }
-                    
-                }
-                
-               
-                //AirportDAL.deleteAll()
                     _ = AirportDAL.insertAll(mAirports: airports)
-                
+                }
             }
-        
+            
         }
         
-         readAirportQueue.async(execute: readAirpotsWorkItem)
-        // let readAirpotsWorkItem = DispatchWorkItem {
-        // }
-        //readAirpotsWorkItem.notify(queue: readAirportQueue, execute: //)
+        readAirportQueue.async(execute: readAirpotsWorkItem)
+        
     }
     
-    
-    func getAirports(airports: [Airport]) {
-        print("yay deleagte")
-    }
     
     
 }

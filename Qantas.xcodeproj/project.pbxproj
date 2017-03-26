@@ -21,7 +21,7 @@
 		F52A2FED1E76C28E00929BAA /* Airport.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52A2FEC1E76C28E00929BAA /* Airport.swift */; };
 		F52A2FF11E76CC1100929BAA /* AirportError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52A2FF01E76CC1100929BAA /* AirportError.swift */; };
 		F52A2FF51E76D07200929BAA /* Airport+Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52A2FF41E76D07200929BAA /* Airport+Init.swift */; };
-		F52A2FF81E76D0AE00929BAA /* AiportBizExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52A2FF71E76D0AE00929BAA /* AiportBizExt.swift */; };
+		F52A2FF81E76D0AE00929BAA /* Aiport+Biz.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52A2FF71E76D0AE00929BAA /* Aiport+Biz.swift */; };
 		F53748051E7E45320021637E /* AirportsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53748041E7E45320021637E /* AirportsTableViewController.swift */; };
 		F53748081E7E47570021637E /* AirportsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53748061E7E47570021637E /* AirportsTableViewCell.swift */; };
 		F53748091E7E47570021637E /* AirportsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F53748071E7E47570021637E /* AirportsTableViewCell.xib */; };
@@ -77,7 +77,7 @@
 		F52A2FEC1E76C28E00929BAA /* Airport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Airport.swift; sourceTree = "<group>"; };
 		F52A2FF01E76CC1100929BAA /* AirportError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirportError.swift; sourceTree = "<group>"; };
 		F52A2FF41E76D07200929BAA /* Airport+Init.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Airport+Init.swift"; sourceTree = "<group>"; };
-		F52A2FF71E76D0AE00929BAA /* AiportBizExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AiportBizExt.swift; sourceTree = "<group>"; };
+		F52A2FF71E76D0AE00929BAA /* Aiport+Biz.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Aiport+Biz.swift"; sourceTree = "<group>"; };
 		F53748041E7E45320021637E /* AirportsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirportsTableViewController.swift; sourceTree = "<group>"; };
 		F53748061E7E47570021637E /* AirportsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirportsTableViewCell.swift; sourceTree = "<group>"; };
 		F53748071E7E47570021637E /* AirportsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AirportsTableViewCell.xib; sourceTree = "<group>"; };
@@ -288,7 +288,7 @@
 		F52A2FF61E76D09400929BAA /* Biz */ = {
 			isa = PBXGroup;
 			children = (
-				F52A2FF71E76D0AE00929BAA /* AiportBizExt.swift */,
+				F52A2FF71E76D0AE00929BAA /* Aiport+Biz.swift */,
 			);
 			name = Biz;
 			sourceTree = "<group>";
@@ -584,7 +584,7 @@
 				F5CABF671E7D4FB300A8783D /* AirportData+CoreDataProperties.swift in Sources */,
 				5738AB001E8343EA00F05441 /* Airpor+Crud.swift in Sources */,
 				F52A2FED1E76C28E00929BAA /* Airport.swift in Sources */,
-				F52A2FF81E76D0AE00929BAA /* AiportBizExt.swift in Sources */,
+				F52A2FF81E76D0AE00929BAA /* Aiport+Biz.swift in Sources */,
 				F51834F01E76905E007DB203 /* ViewController.swift in Sources */,
 				F5CABF401E7D153300A8783D /* QantasDB.xcdatamodeld in Sources */,
 				F51834EE1E76905E007DB203 /* AppDelegate.swift in Sources */,
