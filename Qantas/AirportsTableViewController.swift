@@ -38,12 +38,12 @@ class AirportsTableViewController: UITableViewController {
         return self.mAirport.count
     }
 
-    // MARK: - tableView
+    // MARK: - tableView cell filler
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell:AirportsTableViewCell = (tableView.dequeueReusableCell(withIdentifier: "airportCell", for: indexPath) as? AirportsTableViewCell)!
         
-        cell.airportNameCode.text = self.mAirport[indexPath.row].displayName
+        cell.airportNameCode.text = self.mAirport[indexPath.row].displayName + " (" + self.mAirport[indexPath.row].country.countryName + ")"
         cell.airportTimeZone.text = self.mAirport[indexPath.row].code
         return cell
     }
@@ -62,6 +62,10 @@ class AirportsTableViewController: UITableViewController {
     // MARK: - tableView cell select
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     
+        print("did select")
+        let cell = tableView.cellForRow(at: indexPath)
+        self.animateSelectedCell(for: cell!)
+        
         let airportCode:String = mAirport[indexPath.row].code
       
         let foundAirports = AirportDAL.findByCode(mCode: airportCode)
@@ -85,6 +89,26 @@ class AirportsTableViewController: UITableViewController {
             cell.layer.transform = CATransform3DIdentity
         }
         
+    }
+    
+    // MARK: - selected cell animation
+    func animateSelectedCell(for cell:UITableViewCell){
+        
+        UIView.animate(withDuration: 0.3, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 5, options: [],
+                       animations: {
+                        cell.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)
+                        
+        },
+                       completion: { finished in
+                        UIView.animate(withDuration: 0.3, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 5, options: .curveEaseInOut,
+                                       animations: {
+                                        cell.transform = CGAffineTransform(scaleX: 1, y: 1)
+                        },
+                                       completion: nil
+                        )
+                        
+        }
+        )
     }
     
 }
