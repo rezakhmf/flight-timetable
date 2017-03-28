@@ -2,7 +2,7 @@
 //  QantasTests.swift
 //  QantasTests
 //
-//  Created by Reza Farahani on 13/3/17.
+//  Created by Reza Farahani on 28/3/17.
 //  Copyright © 2017 Reza Farahani. All rights reserved.
 //
 
@@ -56,6 +56,18 @@ class QantasTests: XCTestCase {
         XCTAssertTrue(airports[0].regionalAirport == false)
         XCTAssertTrue(airports[0].timeZone == "Australia/Sydney")
     
+    }
+    
+    func testAirportStructWrongInit() {
+    
+        XCTAssertEqual(airports.count, 1)
+        
+        XCTAssertFalse(airports[0].code == "ZZZ")
+        XCTAssertFalse(airports[0].currencyCode == "ZZZ")
+        XCTAssertFalse(airports[0].displayName == "ZZZ")
+        XCTAssertFalse(airports[0].internationalAirport == true)
+        XCTAssertFalse(airports[0].regionalAirport == true)
+        XCTAssertFalse(airports[0].timeZone == "ZZZ")
     }
     
     func testAirportAPiCall(){

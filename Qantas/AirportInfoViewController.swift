@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol AirportInfoViewControllerDelegate {
+    func reloadAiport(data: AnyObject!)
+}
+
 class AirportInfoViewController: UIViewController {
 
     
@@ -21,6 +25,14 @@ class AirportInfoViewController: UIViewController {
     
     
     @IBOutlet weak var timeZone: UILabel!
+    
+    
+    @IBAction func goBack(_ sender: Any) {
+        
+        let mainStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        let vc = mainStoryboard.instantiateViewController(withIdentifier: "initVC") as! ViewController
+        self.present(vc, animated: true, completion: nil)
+    }
     
     var mAirports:[AirportData] = []
     

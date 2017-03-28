@@ -2,18 +2,14 @@
 //  AirportsTableTableViewController.swift
 //  Qantas
 //
-//  Created by Reza Farahani on 19/3/17.
+//  Created by Reza Farahani on 28/3/17.
 //  Copyright © 2017 Reza Farahani. All rights reserved.
 //
 
 import UIKit
 
 
-protocol AirportsTableViewControllerDelegate {
-    
-    func getAirports(airports: [Airport])
-}
-
+// scroll view hasn't implemented as test time was 3 hrs
 class AirportsTableViewController: UITableViewController {
     
     // MARK: - global airport array
