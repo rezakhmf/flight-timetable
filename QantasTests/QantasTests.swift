@@ -58,6 +58,19 @@ class QantasTests: XCTestCase {
     
     }
     
+    func testAirportAPiCall(){
+        
+        let expect = expectation(description: "hit the end point api")
+           Airport.airports(matching: "https://www.qantas.com.au/api/airports"){ airports in
+            XCTAssertTrue(airports.count>0)
+            expect.fulfill()
+        }
+        
+        waitForExpectations(timeout: 10){ (error) in
+            XCTAssertNil(error, "api timeout. \(error?.localizedDescription)")
+        }
+    }
+    
     func testOtherScenarios(){
         //there are more scenarios that could have here
         //but 3 hrs is not enough time to cover all

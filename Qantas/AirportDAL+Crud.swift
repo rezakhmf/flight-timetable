@@ -124,7 +124,7 @@ extension AirportDAL {
             if(i % 1000 == 0 ) {
                 // MARK: - save insert context per 1000 records (less overhead on context)
                 AirportDAL.saveContext()
-                print("insert " + String(i))
+                //print("insert " + String(i))
             }
         }
         // MARK: - save left over insert context
@@ -145,7 +145,7 @@ extension AirportDAL {
                 
                 i += 1
                 if(i % 1000 == 0 ) {
-                    print("deleted " + String(i))
+                    // print("deleted " + String(i))
                     AirportDAL.saveContext()
                 }
                 

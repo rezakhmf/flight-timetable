@@ -62,7 +62,6 @@ class AirportsTableViewController: UITableViewController {
     // MARK: - tableView cell select
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     
-        print("did select")
         let cell = tableView.cellForRow(at: indexPath)
         self.animateSelectedCell(for: cell!)
         
