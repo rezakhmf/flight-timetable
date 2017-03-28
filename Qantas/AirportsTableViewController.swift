@@ -71,7 +71,7 @@ class AirportsTableViewController: UITableViewController {
         let foundAirports = AirportDAL.findByCode(mCode: airportCode)
         
         let mainStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-        let vc = mainStoryboard.instantiateViewController(withIdentifier: "airportDetails") as! AirportDetails
+        let vc = mainStoryboard.instantiateViewController(withIdentifier: "airportInfo") as! AirportInfoViewController
           vc.mAirports = foundAirports
          self.present(vc, animated: true, completion: nil)
     
