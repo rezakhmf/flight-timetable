@@ -8,41 +8,68 @@
 
 import UIKit
 import CoreData
-class ViewController: UIViewController {
 
+
+
+class ViewController: UIViewController, AirportsTableViewControllerDelegate {
+    
+    var delegate:AirportsTableViewControllerDelegate?
+    
+    
+    
+    // MARK: -
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let airportData:AirportData = NSEntityDescription.insertNewObject(forEntityName: "AirportData", into: AirportDAL.persistentContainer.viewContext) as! AirportData
+        // AirportDAL.deleteAll()
         
-        airportData.display_name = "beth"
-
-        AirportDAL.saveContext();
+        let readAirportQueue = DispatchQueue(label: "au.com.qantas.airports.read", qos: .background)
         
-        let fetchAirports:NSFetchRequest<AirportData> = AirportData.fetchRequest()
         
-        do {
-            let airportsFromDB = try AirportDAL.getContext().fetch(fetchAirports)
-            print("number of result: \(airportsFromDB.count)")
-            
-            for result in airportsFromDB as [AirportData] {
-                print("\(result.display_name!)")
+        let readAirpotsWorkItem = DispatchWorkItem {
+            Airport.airports(matching: "https://www.qantas.com.au/api/airports"){ airports in
+                
+                if (airports.count < 11)  {
+                    print(airports.count)
+                    DispatchQueue.main.sync {
+                        let secondViewController:AirportsTableViewController = AirportsTableViewController()
+                        
+                        secondViewController.mAirport = airports
+                        
+                        self.present(secondViewController, animated: true, completion: nil)
+                        // _ = AirportDAL.insertAll(mAirports: airports)
+                    }
+                } else {
+                    print(airports.count)
+                    //should put back in created thread
+                    //do upsert
+                    //  while(AirportDAL.deleteAll()){
+                    //upsert
+                    // print(airports)
+                        //     break
+                        // }
+                    
+                }
+                
+               
+                //AirportDAL.deleteAll()
+                    _ = AirportDAL.insertAll(mAirports: airports)
+                
             }
-        } catch {
-            print("Error")
+        
         }
         
-//        Airport.airports(matching: "https://www.qantas.com.au/api/airports"){ airports in
-//            print(airports)
-//        }
-        // Do any additional setup after loading the view, typically from a nib.
+         readAirportQueue.async(execute: readAirpotsWorkItem)
+        // let readAirpotsWorkItem = DispatchWorkItem {
+        // }
+        //readAirpotsWorkItem.notify(queue: readAirportQueue, execute: //)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    
+    func getAirports(airports: [Airport]) {
+        print("yay deleagte")
     }
-
-
+    
+    
 }
 
