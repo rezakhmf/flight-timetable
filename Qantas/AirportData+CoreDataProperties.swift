@@ -23,8 +23,8 @@ extension AirportData {
     @NSManaged public var latitude: Double
     @NSManaged public var longitude: Double
     @NSManaged public var currency_code: String?
-    @NSManaged public var country_display_name: String?
     @NSManaged public var timezone: String?
+    @NSManaged public var country_display_name: String?
     @NSManaged public var country_code: String?
 
 }

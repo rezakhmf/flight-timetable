@@ -11,11 +11,11 @@ import Foundation
 extension Airport {
     
     
-    
+    // MARK: - get all aiports
     static func airports(matching query: String, completionHandler: @escaping (([Airport]) -> Void)) {
         
         let airportSvcEndpoint: String = query
-        
+        // MARK: - api url to retrive airports
         guard let airportSvcEndpointRequest = URL(string: airportSvcEndpoint) else {
             print("Error: cannot create URL")
             return
@@ -40,7 +40,6 @@ extension Airport {
                 let airportsJson = json["airports"] as? [[String: Any]] ?? []
                 for case let item in airportsJson {
                     if let airport = try? Airport(json: item) {
-                        //print(airport ?? "nothing")
                         airports.append(airport!)
                         if(airports.count == 10 ){
                              completionHandler(airports)

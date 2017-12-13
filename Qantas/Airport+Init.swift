@@ -10,7 +10,7 @@ import Foundation
 
 extension Airport{
     
-    
+    // MARK: - init aiport struct as a json string
     init?(json:[String:Any]) throws {
         guard let code = json["code"] as? String else {
             throw SerializationAirportError.missing("code")
@@ -29,7 +29,7 @@ extension Airport{
             let longitude = locationJson["latitude"] else {
                 throw SerializationAirportError.missing("location")
         }
-        //check not random geolocation
+        // MARK: - check not random geolocation
         let location = (latitude, longitude)
         guard case(-90...90, -180...180) = location else {
             throw SerializationAirportError.invalid("location", location)
@@ -47,7 +47,7 @@ extension Airport{
                 throw SerializationAirportError.missing("display_name")
         }
         
-        // Initialize airport properties
+        // MARK: - Initialize airport properties
         self.code = code
         self.displayName = displayName
         self.internationalAirport = internationalAirport

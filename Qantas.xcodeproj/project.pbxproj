@@ -9,8 +9,7 @@
 /* Begin PBXBuildFile section */
 		0989B431379A54FA0BCB8FEF /* Pods_QantasUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B8C465A994D66E7AA79628E /* Pods_QantasUITests.framework */; };
 		28CECD44C934B6096F2BF514 /* Pods_QantasTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA103BA97A78A23DEC0D1DB6 /* Pods_QantasTests.framework */; };
-		5738AB001E8343EA00F05441 /* Airpor+Crud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5738AAFF1E8343EA00F05441 /* Airpor+Crud.swift */; };
-		5738AB021E8381F200F05441 /* AirportDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5738AB011E8381F200F05441 /* AirportDetails.swift */; };
+		5738AB001E8343EA00F05441 /* AirportDAL+Crud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5738AAFF1E8343EA00F05441 /* AirportDAL+Crud.swift */; };
 		F51834EE1E76905E007DB203 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51834ED1E76905E007DB203 /* AppDelegate.swift */; };
 		F51834F01E76905E007DB203 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51834EF1E76905E007DB203 /* ViewController.swift */; };
 		F51834F31E76905E007DB203 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F51834F11E76905E007DB203 /* Main.storyboard */; };
@@ -21,15 +20,17 @@
 		F52A2FED1E76C28E00929BAA /* Airport.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52A2FEC1E76C28E00929BAA /* Airport.swift */; };
 		F52A2FF11E76CC1100929BAA /* AirportError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52A2FF01E76CC1100929BAA /* AirportError.swift */; };
 		F52A2FF51E76D07200929BAA /* Airport+Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52A2FF41E76D07200929BAA /* Airport+Init.swift */; };
-		F52A2FF81E76D0AE00929BAA /* AiportBizExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52A2FF71E76D0AE00929BAA /* AiportBizExt.swift */; };
+		F52A2FF81E76D0AE00929BAA /* Aiport+Biz.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52A2FF71E76D0AE00929BAA /* Aiport+Biz.swift */; };
 		F53748051E7E45320021637E /* AirportsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53748041E7E45320021637E /* AirportsTableViewController.swift */; };
 		F53748081E7E47570021637E /* AirportsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53748061E7E47570021637E /* AirportsTableViewCell.swift */; };
 		F53748091E7E47570021637E /* AirportsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F53748071E7E47570021637E /* AirportsTableViewCell.xib */; };
+		F55990761E898D01001F0769 /* AirportInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55990751E898D01001F0769 /* AirportInfoViewController.swift */; };
 		F5CABF3D1E78188300A8783D /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = F5CABF3C1E78188300A8783D /* Podfile */; };
 		F5CABF401E7D153300A8783D /* QantasDB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F5CABF3E1E7D153300A8783D /* QantasDB.xcdatamodeld */; };
-		F5CABF4F1E7D2E1900A8783D /* Airport+DAL.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CABF4E1E7D2E1900A8783D /* Airport+DAL.swift */; };
+		F5CABF4F1E7D2E1900A8783D /* AirportDAL.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CABF4E1E7D2E1900A8783D /* AirportDAL.swift */; };
 		F5CABF661E7D4FB300A8783D /* AirportData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CABF641E7D4FB300A8783D /* AirportData+CoreDataClass.swift */; };
 		F5CABF671E7D4FB300A8783D /* AirportData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CABF651E7D4FB300A8783D /* AirportData+CoreDataProperties.swift */; };
+		F5D69D761E87A32C00C2A523 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D69D751E87A32C00C2A523 /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,8 +54,7 @@
 		061FEF49A286E67197E43F2F /* Pods-QantasUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QantasUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QantasUITests/Pods-QantasUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		1F068A22CC2634F9E7B6AF82 /* Pods_Qantas.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Qantas.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D9AD1BDC02EB467DE2F3225 /* Pods-QantasTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QantasTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-QantasTests/Pods-QantasTests.release.xcconfig"; sourceTree = "<group>"; };
-		5738AAFF1E8343EA00F05441 /* Airpor+Crud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Airpor+Crud.swift"; sourceTree = "<group>"; };
-		5738AB011E8381F200F05441 /* AirportDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirportDetails.swift; sourceTree = "<group>"; };
+		5738AAFF1E8343EA00F05441 /* AirportDAL+Crud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AirportDAL+Crud.swift"; sourceTree = "<group>"; };
 		8B8C465A994D66E7AA79628E /* Pods_QantasUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QantasUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A10B9BB5B88653F1A9C2A822 /* Pods-Qantas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Qantas.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Qantas/Pods-Qantas.debug.xcconfig"; sourceTree = "<group>"; };
 		A7943424C5C1D2B30F4DF376 /* Pods-QantasTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QantasTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QantasTests/Pods-QantasTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -77,15 +77,17 @@
 		F52A2FEC1E76C28E00929BAA /* Airport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Airport.swift; sourceTree = "<group>"; };
 		F52A2FF01E76CC1100929BAA /* AirportError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirportError.swift; sourceTree = "<group>"; };
 		F52A2FF41E76D07200929BAA /* Airport+Init.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Airport+Init.swift"; sourceTree = "<group>"; };
-		F52A2FF71E76D0AE00929BAA /* AiportBizExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AiportBizExt.swift; sourceTree = "<group>"; };
+		F52A2FF71E76D0AE00929BAA /* Aiport+Biz.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Aiport+Biz.swift"; sourceTree = "<group>"; };
 		F53748041E7E45320021637E /* AirportsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirportsTableViewController.swift; sourceTree = "<group>"; };
 		F53748061E7E47570021637E /* AirportsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirportsTableViewCell.swift; sourceTree = "<group>"; };
 		F53748071E7E47570021637E /* AirportsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AirportsTableViewCell.xib; sourceTree = "<group>"; };
+		F55990751E898D01001F0769 /* AirportInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirportInfoViewController.swift; sourceTree = "<group>"; };
 		F5CABF3C1E78188300A8783D /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		F5CABF3F1E7D153300A8783D /* QantasDB.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = QantasDB.xcdatamodel; sourceTree = "<group>"; };
-		F5CABF4E1E7D2E1900A8783D /* Airport+DAL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Airport+DAL.swift"; sourceTree = "<group>"; };
+		F5CABF4E1E7D2E1900A8783D /* AirportDAL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirportDAL.swift; sourceTree = "<group>"; };
 		F5CABF641E7D4FB300A8783D /* AirportData+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AirportData+CoreDataClass.swift"; sourceTree = "<group>"; };
 		F5CABF651E7D4FB300A8783D /* AirportData+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AirportData+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F5D69D751E87A32C00C2A523 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,8 @@
 		5738AAFB1E833C2300F05441 /* Airports */ = {
 			isa = PBXGroup;
 			children = (
+				F5D69D741E87A31A00C2A523 /* Utils */,
+				F52A2FF61E76D09400929BAA /* Biz */,
 				5738AAFE1E833C6B00F05441 /* CRUD */,
 				5738AAFD1E833C5D00F05441 /* DAL */,
 				5738AAFC1E833C5300F05441 /* Model */,
@@ -146,6 +150,8 @@
 		5738AAFC1E833C5300F05441 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F5CABF3E1E7D153300A8783D /* QantasDB.xcdatamodeld */,
+				F52A2FF41E76D07200929BAA /* Airport+Init.swift */,
 				F52A2FEC1E76C28E00929BAA /* Airport.swift */,
 			);
 			name = Model;
@@ -156,7 +162,7 @@
 			children = (
 				F5CABF641E7D4FB300A8783D /* AirportData+CoreDataClass.swift */,
 				F5CABF651E7D4FB300A8783D /* AirportData+CoreDataProperties.swift */,
-				F5CABF4E1E7D2E1900A8783D /* Airport+DAL.swift */,
+				F5CABF4E1E7D2E1900A8783D /* AirportDAL.swift */,
 			);
 			name = DAL;
 			sourceTree = "<group>";
@@ -164,7 +170,7 @@
 		5738AAFE1E833C6B00F05441 /* CRUD */ = {
 			isa = PBXGroup;
 			children = (
-				5738AAFF1E8343EA00F05441 /* Airpor+Crud.swift */,
+				5738AAFF1E8343EA00F05441 /* AirportDAL+Crud.swift */,
 			);
 			name = CRUD;
 			sourceTree = "<group>";
@@ -216,9 +222,9 @@
 				F51834F61E76905E007DB203 /* LaunchScreen.storyboard */,
 				F51834F91E76905E007DB203 /* Info.plist */,
 				F53748041E7E45320021637E /* AirportsTableViewController.swift */,
+				F55990751E898D01001F0769 /* AirportInfoViewController.swift */,
 				F53748061E7E47570021637E /* AirportsTableViewCell.swift */,
 				F53748071E7E47570021637E /* AirportsTableViewCell.xib */,
-				5738AB011E8381F200F05441 /* AirportDetails.swift */,
 			);
 			path = Qantas;
 			sourceTree = "<group>";
@@ -246,28 +252,8 @@
 			children = (
 				5738AAFA1E833C1200F05441 /* Entity */,
 				F52A2FEF1E76CBE700929BAA /* Error */,
-				F52A2FEB1E76C05400929BAA /* Model */,
-				F52A2FEA1E76C03B00929BAA /* Extension */,
 			);
 			name = Operates;
-			sourceTree = "<group>";
-		};
-		F52A2FEA1E76C03B00929BAA /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-				F52A2FF61E76D09400929BAA /* Biz */,
-				F52A2FF31E76D02800929BAA /* Model */,
-			);
-			name = Extension;
-			sourceTree = "<group>";
-		};
-		F52A2FEB1E76C05400929BAA /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				F52A2FF41E76D07200929BAA /* Airport+Init.swift */,
-				F5CABF3E1E7D153300A8783D /* QantasDB.xcdatamodeld */,
-			);
-			name = Model;
 			sourceTree = "<group>";
 		};
 		F52A2FEF1E76CBE700929BAA /* Error */ = {
@@ -278,19 +264,20 @@
 			name = Error;
 			sourceTree = "<group>";
 		};
-		F52A2FF31E76D02800929BAA /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Model;
-			sourceTree = "<group>";
-		};
 		F52A2FF61E76D09400929BAA /* Biz */ = {
 			isa = PBXGroup;
 			children = (
-				F52A2FF71E76D0AE00929BAA /* AiportBizExt.swift */,
+				F52A2FF71E76D0AE00929BAA /* Aiport+Biz.swift */,
 			);
 			name = Biz;
+			sourceTree = "<group>";
+		};
+		F5D69D741E87A31A00C2A523 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F5D69D751E87A32C00C2A523 /* Utils.swift */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -576,15 +563,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5738AB021E8381F200F05441 /* AirportDetails.swift in Sources */,
 				F52A2FF11E76CC1100929BAA /* AirportError.swift in Sources */,
 				F53748081E7E47570021637E /* AirportsTableViewCell.swift in Sources */,
 				F5CABF661E7D4FB300A8783D /* AirportData+CoreDataClass.swift in Sources */,
-				F5CABF4F1E7D2E1900A8783D /* Airport+DAL.swift in Sources */,
+				F5CABF4F1E7D2E1900A8783D /* AirportDAL.swift in Sources */,
+				F5D69D761E87A32C00C2A523 /* Utils.swift in Sources */,
+				F55990761E898D01001F0769 /* AirportInfoViewController.swift in Sources */,
 				F5CABF671E7D4FB300A8783D /* AirportData+CoreDataProperties.swift in Sources */,
-				5738AB001E8343EA00F05441 /* Airpor+Crud.swift in Sources */,
+				5738AB001E8343EA00F05441 /* AirportDAL+Crud.swift in Sources */,
 				F52A2FED1E76C28E00929BAA /* Airport.swift in Sources */,
-				F52A2FF81E76D0AE00929BAA /* AiportBizExt.swift in Sources */,
+				F52A2FF81E76D0AE00929BAA /* Aiport+Biz.swift in Sources */,
 				F51834F01E76905E007DB203 /* ViewController.swift in Sources */,
 				F5CABF401E7D153300A8783D /* QantasDB.xcdatamodeld in Sources */,
 				F51834EE1E76905E007DB203 /* AppDelegate.swift in Sources */,
