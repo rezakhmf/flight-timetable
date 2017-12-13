@@ -20,6 +20,7 @@ class QantasTests: XCTestCase {
         super.setUp()
         
            let airportsFromApi:String = "{\"airports\":[{\"code\":\"BZD\",\"display_name\":\"Balranald\",\"international_airport\":false,\"regional_airport\":false,\"location\":{\"latitude\":-34.616665,\"longitude\":143.61667},\"currency_code\":\"AUD\",\"timezone\":\"Australia/Sydney\",\"country\":{\"code\":\"AU\",\"display_name\":\"Australia\"}}]}";
+        
         do{
             let data: NSData = airportsFromApi.data(using: String.Encoding.utf8)! as NSData
             let json = try JSONSerialization.jsonObject(with: data as Data) as? [String: Any]
@@ -39,6 +40,7 @@ class QantasTests: XCTestCase {
     
 
     func testInitAirportsTableView() {
+        
     
         let airportsTV = AirportsTableViewController()
         _ = airportsTV.view
